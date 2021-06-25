@@ -65,13 +65,11 @@ function draw(){
   {
     text("Last Feed : "+ lastFed + " AM",350,30);
   }
- }
- drawSprites();
   
   fill(255,255,254);
  textSize(15);
 
-  // text("Note: Press UP_ARROW Key To Feed Drago Milk!",130,10,300,20);
+//  text("Note: Press UP_ARROW Key To Feed Drago Milk!",130,10,300,20);
  
   //add styles here
 drawSprites();
