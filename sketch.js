@@ -51,9 +51,6 @@ function draw(){
   {
     Lastfeed=data.val();
   })
- 
-  
-
   fill("white");
   textSize(15);
   if(Lastfeed>=12)
