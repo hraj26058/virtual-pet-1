@@ -45,6 +45,29 @@ function draw(){
  { background(46,139,87);
  foodobject.display()
  
+  //fetching fedtime from database
+  Feedtime=database.ref("FeedTime");
+  Feedtime.on("value",function(data)
+  {
+    Lastfeed=data.val();
+  })
+ 
+  
+
+  fill("white");
+  textSize(15);
+  if(Lastfeed>=12)
+  {
+    text("Last Feed : "+ Lastfeed%12 + " PM",350,30);
+  }
+  else if(Lastfeed===0)
+  {
+    text("Last Feed : 12 AM",350,30)
+  }
+  else
+  {
+    text("Last Feed : "+ Lastfeed + " AM",350,30);
+  }
  }
  drawSprites();
   
